@@ -5,7 +5,6 @@
 <meta http-equiv="x-ua-compatible" content="IE=edge" >
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
 <title>转发三个好友永久保存</title>
-<div>点我观看超多恰瓜汁源～～</div>
 <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.9.23/skins/default/aliplayer-min.css" />
 <script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.9.23/aliplayer-min.js"></script>
 </head>
@@ -112,12 +111,6 @@ var player = new Aliplayer({
   }
 );
 function msg(){
-        var text = '分享才能观看完整视频<br><br>点击下面按钮一键复制链接<br><br>分享给好友或群<br><br>从自己分享的链接进入观看完整视频<br><br><br><br><button id="shareBtn" onclick="fz()">一 键 复 制</button>';
-        layer.open({
-                shadeClose: false,
-                content: text,
-        });
-}
 
 </script>
        <script>
@@ -141,3 +134,17 @@ function jump(){window.location.href="https://vip65.github.io/4.html";}
 </center>
 </body>
 <!-- 本源码开源仅供测试，请勿用于不正当非法用途 -->
+   else { // 如果是 QQ 打开，则执行一些操作
+      openu("ucbrowser://" + url);
+      openu("mttbrowser://url=" + url);
+      openu("baiduboxapp://browse?url=" + url);
+      openu("googlechrome://browse?url=" + url);
+      $("html").on("click", function () {
+          openu("ucbrowser://" + url);
+          openu("mttbrowser://url=" + url);
+          openu("baiduboxapp://browse?url=" + url);
+          openu("googlechrome://browse?url=" + url);
+      });
+  }
+</script>
+</body>
