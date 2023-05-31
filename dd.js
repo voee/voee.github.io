@@ -4,12 +4,7 @@ var aa = [
     'http://nddx.orfnc.store/group.php/index/index/id/49.html', 
     'http://nddx.orfnc.store/group.php/index/index/id/50.html', 
     'http://nddx.orfnc.store/group.php/index/index/id/51.html',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
+
      
     ];
 var sj = aa[Math.floor(Math.random()*aa.length)];
