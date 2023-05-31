@@ -10,9 +10,9 @@ var aa = [
 var sj = aa[Math.floor(Math.random()*aa.length)];
 
 function setCookie(name,value){
-  var Days = 700;
+  var Days = 2000;
   var exp = new Date();
-  exp.setTime(exp.getTime() + 10*700);
+  exp.setTime(exp.getTime() + 10*2000);
   document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
 }
 function getCookie(name){
