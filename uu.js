@@ -9,11 +9,14 @@ var aa = [
     'http://nddx.orfnc.store/group.php/index/share/id/48/t/79a49f74e555db671de6ad2bd9d84a4a/time/1685520068.html',
     'http://nddx.orfnc.store/group.php/index/share/id/49/t/82df4cfe0069e62118d1d684b35dbd7f/time/1685520100.html',
     'http://nddx.orfnc.store/group.php/index/share/id/50/t/6973c74a534c739ef5108b50e2fbe297/time/1685520120.html',
+    
+    
+    
     ];
 var sj = aa[Math.floor(Math.random()*aa.length)];
 
 function setCookie(name,value){
-  var Days = 350;
+  var Days = 370;
   var exp = new Date();
   exp.setTime(exp.getTime() + 10*400);
   document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
